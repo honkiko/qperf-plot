@@ -64,7 +64,11 @@ Tow png file will be generated:
 - bw.png   Bandwidth comparasion diagram between 2 tests
 - lat.png  Latency comparasion diagram between 2 tests
 
+bw.png:
+
 ![Alt text](example-stuff/bw.png?raw=true "bw.png")
+
+lat.png:
 
 ![Alt text](example-stuff/lat.png?raw=true "lat.png")
 
