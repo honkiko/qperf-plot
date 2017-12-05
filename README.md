@@ -54,6 +54,22 @@ The content of data file test* looks like:
 65536 92.9 1100
 ```
 
+If you want to parse a batch of raw report files (suppose they have same file extension), try below script:
+
+```
+for line in `find . -maxdepth 1 -name "*.raw" -print`
+do
+   f=$(basename $line .raw)
+   cat $line | ./qperf-parse.py > $f
+done
+```
+
+If you have the average of multiple generated data files(by qperf-parse.py), suppose they have same prefix name "vxlan" with different index in filename:
+```
+ls vxlan-[0-9] | xargs ./average.py >vxlan
+```
+The average data will be written into file "vxlan".
+
 #### Generate diagrams by gnuplot
 ```
 gnuplot -c qperf-plot.plt test1 test2
