@@ -74,6 +74,6 @@ lat.png:
 
 
 ## Contribution
-It works but it's only work of an hour. I hope it to be more powerful in future.
+It simply works but I hope it to be more powerful in future.
 
 Issues and Pull-Requests are welcome.

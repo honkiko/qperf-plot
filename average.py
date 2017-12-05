@@ -53,9 +53,3 @@ if __name__ == '__main__':
         print "%d %.1f %d" % (bytes, item[1], lat_avg[bytes])
 
 
-
-
-
-
-
-
